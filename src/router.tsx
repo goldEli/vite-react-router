@@ -1,10 +1,12 @@
 import React from "react";
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import { Home } from "./Home";
 import { NotFound } from "./NotFound";
 
 const Other = React.lazy(() => import("./Other"));
-export const router = createHashRouter([
+
+// export const router = createHashRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
